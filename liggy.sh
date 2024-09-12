@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Define color codes
+PINK='\033[35m'
+RESET='\033[0m'
+
 # Check if the script is being run as root
 if [ "$(id -u)" -ne 0 ]; then
     echo "This script needs to be run with sudo or as the root user."
@@ -50,5 +54,5 @@ sudo /opt/Ligolo/proxy -selfcert
 # Determine the local IP address for the connection
 local_ip=$(ip addr show tun0 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1)
 
-echo "Printing Ligolo connect command..."
-echo "./ligolo -connect ${local_ip}:11601 -ignore-cert"
+echo "${PINK}Windows agent command: ./ligolo.exe -connect ${local_ip}:11601 -ignore-cert${RESET}"
+echo "${PINK}Linux agent command: ./ligolo -connect ${local_ip}:11601 -ignore-cert${RESET}"
