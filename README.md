@@ -1,5 +1,5 @@
 # PopScripts
-This repo includes three scripts to make using ligolo, impacket-smbserver, and transferring files slightly easier by automating required steps and echoing certain commands such that they can be copy/pasted into a new window on a arget machine. 
+This repo includes three scripts to make using ligolo, impacket-smbserver, and transferring files slightly easier by automating required steps and echoing certain commands such that they can be copy/pasted into a new window on a arget machine. If you like all the scripts, it is easiest to just run `sudo ./link.sh`. 
 
 
 ## liggy
