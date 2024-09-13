@@ -1,4 +1,6 @@
 # PopScripts
+This repo includes three scripts to make using ligolo, impacket-smbserver, and transferring files slightly easier by automating required steps and echoing certain commands such that they can be copy/pasted into a new window on a arget machine. 
+
 
 ## liggy
 This script exists to automate the setup of the Ligolo-ng (https://github.com/nicocha30/ligolo-ng) proxy. It requires Ligolo to be in the /opt folder. It requires an IP range to set up a tunnel, but it will accept a specific IP range or a single IP and convert to the IP range of 0/24. 
