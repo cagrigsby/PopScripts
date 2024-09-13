@@ -31,3 +31,6 @@ Run `sudo chmod +x /opt/PopScripts/liggy.sh && ln -s /opt/PopScripts/liggy.sh /u
 ## to create symbolic links for all of them
 
 Run `sudo chmod +x /opt/PopScripts/served.sh && chmod +x /opt/PopScripts/speedysmb.sh chmod +x /opt/PopScripts/liggy.sh && ln -s /opt/PopScripts/served.sh /usr/local/bin/served && ln -s /opt/PopScripts/speedysmb.sh /usr/local/bin/speedysmb && ln -s /opt/PopScripts/liggy.sh /usr/local/bin/liggy`
+
+Or run `sudo ./link.sh`
+
