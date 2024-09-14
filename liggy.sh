@@ -50,9 +50,3 @@ sudo ip route add "${baseIP}/24" dev ligolo
 
 echo "Running Ligolo with self-signed certificate..."
 sudo /opt/Ligolo/proxy -selfcert
-
-# Determine the local IP address for the connection
-local_ip=$(ip addr show tun0 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1)
-
-echo "${PINK}Windows agent command: ./ligolo.exe -connect ${local_ip}:11601 -ignore-cert${RESET}"
-echo "${PINK}Linux agent command: ./ligolo -connect ${local_ip}:11601 -ignore-cert${RESET}"
