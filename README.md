@@ -7,13 +7,13 @@ This script exists to automate the setup of the Ligolo-ng (https://github.com/ni
 
 Run `sudo chmod +x /opt/liggy/liggy.sh && ln -s /opt/liggy/liggy.sh /usr/local/bin/liggy` to be able to call it as liggy from any directory. 
 
-![](Screenshot%202024-09-13%20at%207.34.44%20PM.png)
+![](Images/liggy.png)
 ## served
 This script prints cerutil, iwr, and wget commands to be run on a remote target to download files from your machine. The default IP is your tun0 (-i), the default port (-p) is 80, and the default file (-f) is `file`, but the script can be run with any of those flags. 
 
 Run `sudo chmod +x /opt/PopScripts/served.sh && ln -s /opt/PopScripts/served.sh /usr/local/bin/served` to be able to call it as liggy from any directory. 
 
-![](Screenshot%202024-09-13%20at%207.33.51%20PM.png)
+![](Images/served.png)
 
 ## speedysmb
 
@@ -21,7 +21,7 @@ This script exists to automate the creation of an impacket-smbserver (https://gi
 
 Run `sudo chmod +x /opt/PopScripts/speedysmb.sh && ln -s /opt/PopScripts/speedysmb.sh /usr/local/bin/speedysmb` to be able to call it as speedysmb from any directory.
 
-![](Screenshot%202024-09-13%20at%207.33.10%20PM.png)
+![](Images/speedysmb.png)
 ## to create symbolic links for all of them
 
 Run `sudo chmod +x /opt/PopScripts/served.sh && chmod +x /opt/PopScripts/speedysmb.sh chmod +x /opt/PopScripts/liggy.sh && ln -s /opt/PopScripts/served.sh /usr/local/bin/served && ln -s /opt/PopScripts/speedysmb.sh /usr/local/bin/speedysmb && ln -s /opt/PopScripts/liggy.sh /usr/local/bin/liggy`
