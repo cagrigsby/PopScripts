@@ -8,7 +8,7 @@ This script exists to automate the setup of the Ligolo-ng (https://github.com/ni
 Run `sudo chmod +x /opt/liggy/liggy.sh && ln -s /opt/liggy/liggy.sh /usr/local/bin/liggy` to be able to call it as liggy from any directory. 
 
 ## served
-This script prints cerutil, iwr, and wget commands to be run on a remote target to download files from your machine. The default IP is your tun0 (-IP), the default port (-p) is 80, and the default file (-f) is `file`, but the script can be run with any of those flags. 
+This script prints cerutil, iwr, and wget commands to be run on a remote target to download files from your machine. The default IP is your tun0 (-i), the default port (-p) is 80, and the default file (-f) is `file`, but the script can be run with any of those flags. 
 
 Run `sudo chmod +x /opt/PopScripts/served.sh && ln -s /opt/PopScripts/served.sh /usr/local/bin/served` to be able to call it as liggy from any directory. 
 
