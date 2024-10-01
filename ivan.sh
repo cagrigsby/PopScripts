@@ -5,7 +5,7 @@ read -p "Enter new IP address: " ip
 read -p "Enter new port: " port
 
 # Define the target PHP file
-source_file="/opt/php-reverse-shell/src/reverse/php_reverse_shell.php"
+source_file="/opt/PopScripts/src/php_reverse_shell.php"
 
 # Define the output file name based on the port
 output_file="./ivan${port}.php"
