@@ -1,5 +1,5 @@
 # PopScripts
-This repo includes three scripts to make using ligolo, impacket-smbserver, and transferring files slightly easier by automating required steps and echoing certain commands such that they can be copy/pasted into a new window on a arget machine. If you like all the scripts, it is easiest to just run `sudo ./link.sh`. 
+This repo includes scripts to make using ligolo, impacket-smbserver, and transferring files slightly easier by automating required steps and echoing certain commands such that they can be copy/pasted into a new window on a target machine. I've also added my favorite php-reverse-shell, and a script which prompts you for the IP and port before creating a copy. If you like all the scripts, it is easiest to just run `sudo ./link.sh`. 
 
 
 ## liggy
