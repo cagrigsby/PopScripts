@@ -1,2 +1,2 @@
 alias venv='python3 -m venv myenv && source myenv/bin/activate'
-alias ls='ls -A -F --group-directories-first --sort=extension --color=always'
+alias ls='ls -lh -A -F --group-directories-first --sort=extension --color=always'
