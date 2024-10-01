@@ -22,9 +22,14 @@ This script exists to automate the creation of an impacket-smbserver (https://gi
 Run `sudo chmod +x /opt/PopScripts/speedysmb.sh && ln -s /opt/PopScripts/speedysmb.sh /usr/local/bin/speedysmb` to be able to call it as speedysmb from any directory.
 
 ![](Images/speedysmb.png)
+
+## ivan
+
+This script prompts the user for a IP and Port before generating a new copy of Ivan Sincek's [PHP-Reverse-Shell](https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/reverse/php_reverse_shell.php) in the working directory. 
+
 ## to create symbolic links for all of them
 
-Run `sudo chmod +x /opt/PopScripts/served.sh && chmod +x /opt/PopScripts/speedysmb.sh chmod +x /opt/PopScripts/liggy.sh && ln -s /opt/PopScripts/served.sh /usr/local/bin/served && ln -s /opt/PopScripts/speedysmb.sh /usr/local/bin/speedysmb && ln -s /opt/PopScripts/liggy.sh /usr/local/bin/liggy`
+Run `sudo chmod +x /opt/PopScripts/served.sh && chmod +x /opt/PopScripts/speedysmb.sh && chmod +x /opt/PopScripts/liggy.sh && chmod +x /opt/PopScripts/ivan.sh && ln -s /opt/PopScripts/served.sh /usr/local/bin/served && ln -s /opt/PopScripts/speedysmb.sh /usr/local/bin/speedysmb && ln -s /opt/PopScripts/liggy.sh /usr/local/bin/liggy && ln -s /opt/PopScripts/ivan.sh /usr/local/bin/ivan`
 
 Or run `sudo ./link.sh`
 
