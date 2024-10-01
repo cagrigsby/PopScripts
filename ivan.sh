@@ -14,6 +14,6 @@ output_file="./ivan${port}.php"
 cp "$source_file" "$output_file"
 
 # Use sed to replace the line with the new IP and port
-sed -i "s/\(\$sh = new Shell('\)[^']*\('\)/\1$ip',$port\2/" "$output_file"
+sed -i "s/\(\$sh = new Shell('\)[^']*\(',\s*[0-9]*\)/\1$ip', $port)/" "$output_file"
 
 echo "Updated $target_file with IP: $ip and Port: $port"
