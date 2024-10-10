@@ -1,8 +1,8 @@
 #!/bin/bash
 
-# Define color codes
-PINK='\033[35m'
-RESET='\033[0m'
+# Define color codes ${PINK} for PINK and ${NC} to NC
+PINK='\033[38;2;255;105;180m'  # Pink RGB color
+NC='\033[0m'                   # No Color (NC)
 
 # Check if the script is being run as root
 if [ "$(id -u)" -ne 0 ]; then
@@ -13,8 +13,8 @@ fi
 # Determine the local IP address for the connection
 local_ip=$(ip addr show tun0 | grep 'inet ' | awk '{print $2}' | cut -d/ -f1)
 
-echo -e "Transfer ligoloagent to target Linux machine and run: '${PINK}./ligolo -connect ${local_ip}:11601 -ignore-cert ${RESET}'"
-echo -e "Or transfer ligoloagent.exe to target Windows machine and run: '${PINK}.\ligolo.exe -connect ${local_ip}:11601 -ignore-cert ${RESET}'"
+echo -e "Transfer ligoloagent to target Linux machine and run: '${PINK}./ligolo -connect ${local_ip}:11601 -ignore-cert ${NC}'"
+echo -e "Or transfer ligoloagent.exe to target Windows machine and run: '${PINK}.\ligolo.exe -connect ${local_ip}:11601 -ignore-cert ${NC}'"
 
 # Function to convert a single IP to a /24 range
 convert_ip_to_range() {
